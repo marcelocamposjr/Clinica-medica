@@ -20,7 +20,7 @@ body {
 .botao-flutuante a {
     background-image: url(../imagens/cetacima.png);
     background-size: cover;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     background-position: center;
     border: none;
     position: absolute;
@@ -71,7 +71,8 @@ nav a:hover {
 
 .container-imagem {
     background: url(../imagens/recepcao.png);
-    background-position: center center;
+    background-attachment: fixed;
+    background-position: center bottom;
     background-size: cover;
     height: 600px;
     display: flex;
@@ -163,12 +164,14 @@ main {
 }
 
 figure {
+    transition: 0.3s;
     border-radius: 5px;
     box-shadow: 0px 0px 7px rgb(128, 125, 125);
     text-align: center;
     font-size: 20px;
     padding: 5px;
 }
+
 
 figcaption {
     font-weight: 500;
@@ -187,11 +190,18 @@ figcaption {
 
 .verhorarios p {
     font-weight: bolder;
+    transition: 0.6s;
     text-align: center;
     font-size: 23px;
     padding: 18px;
     background-color: turquoise;
     box-shadow: 0px 10px 10px rgb(56, 189, 175);
+}
+
+.verhorarios p:hover {
+    transition: 0.6s;
+    background-color: turquoise;
+    box-shadow: 0px 10px 2px rgb(4, 107, 95);
 }
 
 /* FIM SEÇÃO ESPECIALIDADES */
@@ -382,21 +392,22 @@ main {
 .ul {
     font-size: 20px;
     display: flex;
+    flex-direction: row;
     width: 100%;
-    flex-wrap: wrap;
     padding: 0px 10px;
-    justify-content: center;
-    align-items: center;
 }
 
 .ul img {
-    margin: 0px 50px 0px 0px;
+    display: none;
+    left: 0;
+    padding: 15px;
 }
 
 .ul h3 {
+    text-align: justify;
     color: #4444448c;
-    font-size: 30px;
-    margin: 0px 0px 30px -30px;
+    font-size: 33px;
+    margin: 30px 0px 30px 0px;
 }
 
 /* FIM SEÇÃO SOBRE */
@@ -408,20 +419,27 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .figure img {
-    max-width: 250px;
+    max-width: 200px;
     padding: 10px 0px;
     box-shadow: 0px 2px 5px rgb(168, 165, 165);
 }
 
 figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
     border-radius: 5px;
     box-shadow: 0px 0px 7px rgb(128, 125, 125);
     text-align: center;
     font-size: 20px;
-    padding: 5px;
+    width: 250px;
+    padding: 50px;
 }
 
 figcaption {
@@ -506,7 +524,15 @@ span {
 }
 
 .container a{
+    transition: 0.6s;
     margin: 60px 10px 10px 10px;
+}
+
+.container a:hover{
+    transition: 0.6s;
+    color: white;
+    border-radius: 5px;
+    background-color: teal;
 }
 
 .paragrafo {
@@ -543,12 +569,16 @@ span {
 
 .tabela-imagem table {
     display: flex;
-    padding: 0px 30px;
+    padding: 10px 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     max-width: 1024px;
+}
+
+.tabela-imagem td{
+    padding: 5px;
 }
 
 .especialidades > .tabela-imagem > table > thead  {
@@ -676,6 +706,7 @@ tr:nth-of-type(2) {
 }
 
 .tabela-imagem img{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.61);
     max-width: 400px;
 }
 
@@ -688,6 +719,7 @@ tr:nth-of-type(2) {
 }
 
 .tabela-imagem table {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.61);
     text-align: center;
     max-width: 1024px;
 }
@@ -697,6 +729,10 @@ thead:nth-of-type(1) {
 }
 
 tr:nth-of-type(2) {
+    background-color: #d1cdcd8c;
+}
+
+tr:nth-of-type(4) {
     background-color: #d1cdcd8c;
 }
 
