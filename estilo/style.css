@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #0000008c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* TODAS CONFIGS */
+
+/* BOTÃO */
+
+
+.botao-flutuante a {
+    background-image: url(../imagens/cetacima.png);
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0);
+    background-position: center;
+    border: none;
+    position: absolute;
+    position: fixed; 
+    width: 150px;
+    height: 100px;
+    color: rgba(0, 128, 0, 0);
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* FIM BOTÃO */
+
+/* HEADER */
+
+header {
+    background-color: rgb(14, 180, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.limita-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+nav a:hover {
+    color: #0000008c;
+}
+
+/* FIM HEADER */
+
+/* INICIO CAPA E SECTIONS */
+
+.container-imagem {
+    background: url(../imagens/recepcao.png);
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-imagem h1 {
+    color: white;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+/* FIM CAPA */
+
+/* SECTIONS */
+
+.limita {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+/* SEÇÃO SOBRE */
+
+main {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-paragrafo {
+    font-size: 28px;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h2secao {
+    font-size: 40px;
+    padding: 0px 0px 10px 0px;
+}
+
+.ul {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul img {
+    margin: 0px 50px 0px 0px;
+}
+
+.ul h3 {
+    color: #4444448c;
+    font-size: 30px;
+    margin: 0px 0px 30px -30px;
+}
+
+/* FIM SEÇÃO SOBRE */
+
+/* SEÇÃO ESPECIALIDADES */
+
+.figure {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.figure img {
+    max-width: 500px;
+    box-shadow: 0px 2px 5px rgb(168, 165, 165);
+}
+
+figure {
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgb(128, 125, 125);
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+figcaption {
+    font-weight: 500;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.verhorarios {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.verhorarios p {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 23px;
+    padding: 18px;
+    background-color: turquoise;
+    box-shadow: 0px 10px 10px rgb(56, 189, 175);
+}
+
+/* FIM SEÇÃO ESPECIALIDADES */
+
+/* SEÇÃO CONTATOS */
+
+span {
+    color: black;
+    font-weight: bold;
+}
+
+.contato h2, p {
+    padding: 30px 0px;
+}
+
+/* FIM SEÇÃO CONTATOS */
+
+/* INICIO FOOTER (RODAPÉ) */
+
+.rodape {
+    margin-top: 100px;
+    padding: 30px 0px;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(21, 114, 109);
+}
+
+.rodape a {
+    color: white;
+}
+
+/* FIM RODAPÉ */
+
+
+
+
+
+
+
+
+/* MEDIAS */
+
+
+
+/* MEDIAS */
+
+
+/* MEDIAS */
+
+/* MEDIAS */
+
+
+/* MEDIAS */
+
+
+/* MEDIAS */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    /* HEADER */
+
+header {
+    background-color: rgb(14, 180, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+
+.limita-container {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+nav a:hover {
+    color: #0000008c;
+}
+
+/* FIM HEADER */
+
+
+/* BOTÃO */
+
+
+.botao-flutuante a {
+    background-image: url(../imagens/cetacima.png);
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0);
+    background-position: center;
+    border: none;
+    position: absolute;
+    position: fixed; 
+    width: 70px;
+    height: 70px;
+    color: rgba(0, 128, 0, 0);
+    right: 10px;
+    bottom: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* FIM BOTÃO */
+
+/* INICIO CAPA E SECTIONS */
+
+.container-imagem {
+    background: url(../imagens/recepcao.png);
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-imagem h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+/* FIM CAPA */
+
+/* SECTIONS */
+
+.limita {
+    width: 80%;
+    padding: 30px 0px;
+}
+
+/* SEÇÃO SOBRE */
+
+main {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-paragrafo {
+    padding: 0px 20px;
+    font-size: 28px;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h2secao {
+    font-size: 30px;
+    padding: 0px 0px 10px 0px;
+}
+
+.ul {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul img {
+    margin: 0px 50px 0px 0px;
+}
+
+.ul h3 {
+    color: #4444448c;
+    font-size: 30px;
+    margin: 0px 0px 30px -30px;
+}
+
+/* FIM SEÇÃO SOBRE */
+
+/* SEÇÃO ESPECIALIDADES */
+
+.figure {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.figure img {
+    max-width: 250px;
+    padding: 10px 0px;
+    box-shadow: 0px 2px 5px rgb(168, 165, 165);
+}
+
+figure {
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgb(128, 125, 125);
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+figcaption {
+    font-weight: 500;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.verhorarios {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.verhorarios p {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 23px;
+    padding: 18px;
+    background-color: turquoise;
+    box-shadow: 0px 10px 10px rgb(56, 189, 175);
+}
+
+/* FIM SEÇÃO ESPECIALIDADES */
+
+/* SEÇÃO CONTATOS */
+
+span {
+    color: black;
+    font-weight: bold;
+}
+
+.contato h2, p {
+    padding: 30px 0px;
+}
+
+/* FIM SEÇÃO CONTATOS */
+
+/* INICIO FOOTER (RODAPÉ) */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(21, 114, 109);
+}
+
+.rodape a {
+    color: white;
+}
+
+.rodape img {
+    width: 40%;
+}
+
+.rodapeparagrafo {
+    display: flex;
+    padding: 0px 20px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* ESPECIALIDADES - CSS */
+
+
+.especialidades {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container a{
+    margin: 60px 10px 10px 10px;
+}
+
+.paragrafo {
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.h1container {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.paragrafo p {
+    font-size: 25px;
+    text-align: justify;
+    max-width: 1024px;
+    padding: 0px 30px;
+}
+
+.tabela-imagem img{
+    width: 100%;
+}
+
+.tabela-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: center;
+    width: 100%;
+}
+
+.tabela-imagem table {
+    display: flex;
+    padding: 0px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1024px;
+}
+
+.especialidades > .tabela-imagem > table > thead  {
+    display: none;
+}
+
+
+thead:nth-of-type(1) {
+    background-color: rgb(0, 217, 255);
+}
+
+tr:nth-of-type(2) {
+    background-color: #d1cdcd8c;
+}
+
+.cinza {
+    background-color: #5a59598c;
+}
+
+
+
+
+/* FIM RODAPÉ */
+  
+}
+
+
+
+
+/* FIM MEDIAS QUERIES */
+
+
+
+
+
+
+/* FIM MEDIAS QUERIES */
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM MEDIAS QUERIES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM MEDIAS QUERIES */
+
+
+/* ESPECIALIDADES - CSS */
+
+
+.container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    margin: 60px 10px 0px;
+}
+
+.container a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+    border-bottom: 5px solid rgb(11, 156, 182);
+    color: #0000008c;
+}
+
+.h1container {
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+/* FIM LINKS NAVEGAÇÃO */
+
+/* INICIO DIVS COM TABELA */
+
+.especialidades {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo {
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.paragrafo p {
+    font-size: 25px;
+    text-align: center;
+    max-width: 1024px;
+}
+
+.tabela-imagem img{
+    max-width: 400px;
+}
+
+.tabela-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: center;
+    width: 100%;
+}
+
+.tabela-imagem table {
+    text-align: center;
+    max-width: 1024px;
+}
+
+thead:nth-of-type(1) {
+    background-color: rgb(0, 217, 255);
+}
+
+tr:nth-of-type(2) {
+    background-color: #d1cdcd8c;
+}
+
+.cinza {
+    background-color: #5a59598c;
+}
+
+
+.tabela-imagem th {
+    padding: 10px 80px;
+}
+
+
+
+
+
